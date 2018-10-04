@@ -25,7 +25,7 @@ def play(songs)
   if songs != list(songs)
     puts "Invalid input, please try again"
   else  songs = list(songs)
-   puts "Playing #{song}"
+   puts "Playing #{songs}"
  end
 end
 

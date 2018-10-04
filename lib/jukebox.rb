@@ -22,12 +22,11 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   response = gets.chomp
-  if !songs.keys.include?(response)
+  if songs != list(songs)
     puts "Invalid input, please try again"
-  else
-    puts "Now playing #{answer}"
-    system "open #{songs[answer]}"
-  end
+  else  songs = list(songs)
+   puts "Playing #{song}"
+ end
 end
 
 def list(songs)
